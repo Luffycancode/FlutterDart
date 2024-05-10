@@ -1,37 +1,23 @@
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
+import "package:flutter/widgets.dart";
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+  runApp(
+    const MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('First App'),
-        ),
+        backgroundColor: Color(0xff00BCD1),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text(
-                'Hello World!',
-              ),
-              Text(
-                'It\'s time to learn Flutter!',
-              ),
-            ],
-          ),
+          child: Text(" Konnichiwa!! ",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40.0,
+                  fontStyle: FontStyle.italic)),
         ),
       ),
-    );
-  }
+    ),
+  );
 }
+
+
+//  body: const Center(
+//           child: Text('Hello World')
